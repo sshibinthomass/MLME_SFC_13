@@ -63,7 +63,7 @@ python Additional_task_2.py  # To run the additional task
 
 # MLME Project - Group 13
 
-This repository contains all code, models, and data processing scripts for the MLME Project of group 13, focusing on time series prediction, uncertainty quantification, and model evaluation for SFC (Spray Fluidized Coating) data.
+This repository contains all code, models, and data processing scripts for the MLME Project of group 13, focusing on time series prediction, uncertainty quantification, and model evaluation for SFC (Slug Flow Crystallization) data.
 
 ---
 
@@ -203,7 +203,7 @@ This repository contains all code, models, and data processing scripts for the M
 - Shibin Thomas Stanley Paul
 - Nishitkumar Karkar
 - Aadhithya Krishnakumar
-- Sankar Nair
+- Sankar Santhosh Nair
 
 ---
 
