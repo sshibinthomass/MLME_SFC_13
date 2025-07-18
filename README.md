@@ -61,9 +61,9 @@ python Additional_task_2.py  # To run the additional task
 
 ---
 
-# MLME Project - Final
+# MLME Project - Group 13
 
-This repository contains all code, models, and data processing scripts for the MLME Project, focusing on time series prediction, uncertainty quantification, and model evaluation for SFC (Spray Fluidized Coating) data.
+This repository contains all code, models, and data processing scripts for the MLME Project of group 13, focusing on time series prediction, uncertainty quantification, and model evaluation for SFC (Spray Fluidized Coating) data.
 
 ---
 
@@ -83,15 +83,20 @@ This repository contains all code, models, and data processing scripts for the M
 
 ```
 .
-├── main_final.py
-├── preprocessing_final.py
-├── Additional_task_2.py
+├── main.py (To test the final prediction)
+├── preprocessing_final.py (Preprocessing the test file)
+├── Additional_task_2.py (TO predict the additional Task)
 ├── Model_Train/
-│   ├── training_model.py
-│   ├── predict_narx.py
-│   ├── Model/
-│   ├── Data/
-│   └── ...
+│   ├── training_model.py (Full training script to train the model)
+│   ├── predict_narx.py (Predict the NARX model)
+│   ├── Model/ (All Trained models)
+│   │   ├──narx (Trained NARX model)
+│   │   ├──qr (Trained QR model)
+│   │   ├──data_visualization (Comparision between processed and preprocessed Data)
+│   │   └──clustering_analysis (Clustered Files)
+│   │
+│   ├── Data/ (Data to be Trained)
+│   └── Beat-the-Felix/ (Place the test file inside this folder)
 ├── Beat-the-Felix-Prediction/
 │   └── OUTPUTS/
 ├── NARX_Prediction/
@@ -195,7 +200,7 @@ This repository contains all code, models, and data processing scripts for the M
 
 ## Authors
 
-- Shibin Paul
+- Shibin Thomas Stanley Paul
 - Nishitkumar Karkar
 - Aadhithya Krishnakumar
 - Sankar Nair

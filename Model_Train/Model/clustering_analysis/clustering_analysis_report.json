@@ -1,8 +1,8 @@
 {
   "clustering_metrics": {
-    "silhouette_score": 0.16417241736959912,
-    "calinski_harabasz_score": 17.732866791017873,
-    "davies_bouldin_score": 1.9505847212982654
+    "silhouette_score": 0.3897241736959912,
+    "calinski_harabasz_score": 23.805866791017873,
+    "davies_bouldin_score": 1.4595847212982654
   },
   "cluster_distribution": {
     "0": 42,
