@@ -1,3 +1,66 @@
+## Dependencies
+
+This project requires **Python 3.10**.
+
+> **Note:** The project was developed on **Linux** to support the latest version of TensorFlow GPU. However, the prediction part has also been tested on **Windows CPU**.
+
+The following Python packages are required (see `requirements.txt`):
+
+```
+numpy==2.1.3
+pandas==2.3.1
+tensorflow==2.19.0
+matplotlib==3.10.3
+scikit-learn==1.7.0
+scipy==1.15.3
+tqdm==4.67.1
+seaborn==0.13.2
+```
+
+---
+
+# Deployment Checklist
+
+## 1. Clone the Repository
+
+```sh
+cd D:\Projects  # Navigate to the folder where you want to clone the repo
+
+git clone https://github.com/sshibinthomass/MLME_SFC_13.git  # Clone the repo
+
+cd MLME_SFC_13  # Go to the project folder
+```
+
+## 2. Set Up the Environment
+
+You can use either **Conda** or a standard **Python venv**. Below are instructions for using `uv`:
+
+```sh
+pip install uv  # Install UV if not already done
+
+uv venv -p python3.10 .venv  # Create a virtual environment with Python 3.10
+
+uv init  # Initialize the uv project (if not done already. Ignore error)
+
+.venv\Scripts\activate  # Activate the virtual environment 
+
+uv add -r requirements.txt  # Install the requirements
+
+uv pip install tensorflow  # To install TensorFlow (Not added in requirements due to version issue between windows and linux)
+```
+
+## 3. Run Predictions
+
+- Move the test file inside `Model_Train/Beat-the-Felix` and remove the existing Beat-the-Felix file.
+- Run the following commands:
+
+```sh
+python main.py  # To run the final prediction
+python Additional_task_2.py  # To run the additional task
+```
+
+---
+
 # MLME Project - Final
 
 This repository contains all code, models, and data processing scripts for the MLME Project, focusing on time series prediction, uncertainty quantification, and model evaluation for SFC (Spray Fluidized Coating) data.
@@ -128,26 +191,7 @@ This repository contains all code, models, and data processing scripts for the M
 
 ---
 
-## Dependencies
 
-This project requires **Python 3.10**.
-
-> **Note:** The project was developed on **Linux** to support the latest version of TensorFlow GPU. However, the prediction part has also been tested on **Windows**.
-
-The following Python packages are required (see `requirements.txt`):
-
-```
-numpy==2.1.3
-pandas==2.3.1
-tensorflow==2.19.0
-matplotlib==3.10.3
-scikit-learn==1.7.0
-scipy==1.15.3
-tqdm==4.67.1
-seaborn==0.13.2
-```
-
----
 
 ## Authors
 
