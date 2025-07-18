@@ -6,7 +6,7 @@ import tensorflow as tf
 import json, pickle, shutil
 from pathlib import Path
 
-# --- IMPORT YOUR HELPERS ---
+# --- IMPORT HELPERS ---
 from preprocessing_final import (
     clean_iqr, read_txt, predict_closed, add_cqr, detect_cluster, metric_table,
     smooth_log_psd, predict_recursive_open, plot_ts, plot_scatter
@@ -17,7 +17,7 @@ GROUP:13
     Shibin Paul
     Nishitkumar Karkar
     Aadhithya Krishnakumar
-    Sankar Nair
+    Sankar Santhosh Nair
 
 Main script for computing MSE/MAE metrics per file with PLOTS & Predictions saved in file (if required).
 Requires separate preprocessing module (preprocessing_final.py) for data cleaning, plotting, etc.
