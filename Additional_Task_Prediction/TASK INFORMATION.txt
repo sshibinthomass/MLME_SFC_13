@@ -1,0 +1,79 @@
+Implemented Methods
+
+CODE IS IMPLEMENTED WITH BOTH TASKS COMBINED : TASK 2 and TASK 3.
+
+----Gaussian Error Propagation----
+
+Description: Analytical propagation of model and process uncertainty using a fixed-lag window, with quantile regression-derived uncertainties.
+
+Features: Fast, interpretable, and suitable for quick model diagnostics.
+
+----Monte Carlo Simulation----
+
+Description: Stochastic propagation of uncertainty by running multiple recursive open-loop simulations, each with noise sampled from the learned quantile regression intervals.
+
+Features: Robust, provides direct empirical coverage estimation, and supports non-Gaussian error distributions.
+
+----Simplified Kalman Filter----
+
+Description: Recursive prediction with diagonal covariance update, process noise from conformal deltas, and identity system Jacobian for stability.
+
+Features: Conservative intervals, stable propagation, and interpretable interval growth.
+
+##Key Pipeline Properties##
+
+Open-Loop Recursive Forecasting:
+All methods predict future values using only their own outputs (no ground truth after the initial lag window). This mimics real-world deployment and provides an honest measure of uncertainty growth.
+
+Configurable Lag:
+Lag window (LAG) is fully configurable (e.g., lag=40), allowing experiments with different memory depths.
+
+Exogenous Inputs:
+Models leverage both system state and exogenous input histories for robust predictions.
+
+Automatic Evaluation:
+The pipeline processes all test files, clusters data if needed, loads appropriate models, and runs all UQ methods automatically.
+
+Progress Tracking:
+Uses tqdm for real-time progress bars and reports timing for each step.
+
+Performance Metrics and Plots:
+Outputs MSE, MAE, R², empirical coverage, and average interval width for each variable and method. Saves publication-quality plots and summary CSVs.
+
+____Usage____
+1. Configure paths in the script:
+
+MODEL_ROOT — Path to trained models and metadata.
+
+TEST_DIR — Path to test data.
+
+2. Run the script:
+
+Additional_task_2.py
+
+3. Output:
+
+Summary metrics (metrics_summary.csv)
+
+Timing report (timing_summary.csv)
+
+Side-by-side comparison plots for each variable and method
+
+Visual comparison of interval widths, empirical coverage, and uncertainty growth
+
+____Scientific Validity: _____
+
+Full open-loop evaluation ensures honest uncertainty propagation (no “teacher forcing”).
+
+Seeded for reproducibility: All random processes use fixed seeds.
+
+Interval calibration is empirically validated—coverage is reported for each method and variable.
+
+Documentation and code follow best practices for clarity and scientific transparency.
+
+____Results at a Glance:____
+
+Method	                      Key Strengths	                    Typical Use Case
+Gaussian	      Fast, interpretable, easy diagnostics	      Routine runs, quick checks
+Monte Carlo	      Robust, empirical coverage, non-Gaussian     High-assurance, reporting
+Kalman Filter	    Conservative, stable, interpretable	      Risk analysis, audit trail

@@ -1,0 +1,21 @@
+--Deployment Checklist (Run these commands in PowerShell)--
+
+cd D:\Projects-->Folder you want to clone the repo 
+
+git clone https://github.com/sshibinthomass/MLME_SFC_13.git--> Cloning the repo
+
+cd MLME_SFC_13-->Go to project File
+
+
+
+--Feel free to go ahead with Conda venv or normal python venv--
+
+pip install uv-->Install UV if not already done
+
+uv venv -p python3.10 venv-->Create Virtual Environment 
+.venv\Scripts\activate-->Activate VEnv
+
+uv init--> initialize the uv project
+
+
+uv add -r requirements.txt-->Install the requirements

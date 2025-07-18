@@ -1,0 +1,132 @@
+{
+  "T_PM": {
+    "total_points": 5000,
+    "outliers_removed": "19",
+    "outlier_percentage": 0.38,
+    "lower_bound": 300.3844018512308,
+    "upper_bound": 328.60860153944475,
+    "Q1": 310.968476734311,
+    "Q3": 318.0245266563645,
+    "IQR": 7.056049922053489
+  },
+  "c": {
+    "total_points": 5000,
+    "outliers_removed": "61",
+    "outlier_percentage": 1.22,
+    "lower_bound": 0.16258157150974817,
+    "upper_bound": 0.19871630551447006,
+    "Q1": 0.17613209676151886,
+    "Q3": 0.18516578026269934,
+    "IQR": 0.009033683501180473
+  },
+  "d10": {
+    "total_points": 5000,
+    "outliers_removed": "182",
+    "outlier_percentage": 3.64,
+    "lower_bound": 0.0001781966990524,
+    "upper_bound": 0.000417598539695,
+    "Q1": 0.000267972389293375,
+    "Q3": 0.000327822849454025,
+    "IQR": 5.985046016065e-05
+  },
+  "d50": {
+    "total_points": 5000,
+    "outliers_removed": "209",
+    "outlier_percentage": 4.18,
+    "lower_bound": 0.00023372410177066255,
+    "upper_bound": 0.00046366288445956244,
+    "Q1": 0.000319951145279,
+    "Q3": 0.00037743584095122496,
+    "IQR": 5.7484695672224966e-05
+  },
+  "d90": {
+    "total_points": 5000,
+    "outliers_removed": "186",
+    "outlier_percentage": 3.7199999999999998,
+    "lower_bound": 0.0002670141898721,
+    "upper_bound": 0.0005654037663493,
+    "Q1": 0.00037891028105105,
+    "Q3": 0.00045350767517035,
+    "IQR": 7.45973941193e-05
+  },
+  "T_TM": {
+    "total_points": 5000,
+    "outliers_removed": "10",
+    "outlier_percentage": 0.2,
+    "lower_bound": 299.2145119169359,
+    "upper_bound": 328.97976747176705,
+    "Q1": 310.3764827499976,
+    "Q3": 317.8177966387054,
+    "IQR": 7.441313888707782
+  },
+  "mf_PM": {
+    "total_points": 5000,
+    "outliers_removed": "0",
+    "outlier_percentage": 0.0,
+    "lower_bound": -0.00020007321653405007,
+    "upper_bound": 0.00121064176463275,
+    "Q1": 0.0003289449014035,
+    "Q3": 0.0006816236466952,
+    "IQR": 0.00035267874529170003
+  },
+  "mf_TM": {
+    "total_points": 5000,
+    "outliers_removed": "0",
+    "outlier_percentage": 0.0,
+    "lower_bound": -0.010221785756369554,
+    "upper_bound": 0.027461798254482854,
+    "Q1": 0.0039095582477001,
+    "Q3": 0.0133304542504132,
+    "IQR": 0.009420896002713102
+  },
+  "Q_g": {
+    "total_points": 5000,
+    "outliers_removed": "0",
+    "outlier_percentage": 0.0,
+    "lower_bound": -9.714379877833857e-08,
+    "upper_bound": 1.1419531493811947e-06,
+    "Q1": 3.675175567814864e-07,
+    "Q3": 6.772917938213697e-07,
+    "IQR": 3.097742370398833e-07
+  },
+  "w_crystal": {
+    "total_points": 5000,
+    "outliers_removed": "0",
+    "outlier_percentage": 0.0,
+    "lower_bound": -0.0041173774233156,
+    "upper_bound": 0.016004618895458,
+    "Q1": 0.0034283711962245,
+    "Q3": 0.0084588702759179,
+    "IQR": 0.0050304990796934
+  },
+  "c_in": {
+    "total_points": 5000,
+    "outliers_removed": "1000",
+    "outlier_percentage": 20.0,
+    "lower_bound": 0.19,
+    "upper_bound": 0.19,
+    "Q1": 0.19,
+    "Q3": 0.19,
+    "IQR": 0.0
+  },
+  "T_PM_in": {
+    "total_points": 5000,
+    "outliers_removed": "1000",
+    "outlier_percentage": 20.0,
+    "lower_bound": 323.15,
+    "upper_bound": 323.15,
+    "Q1": 323.15,
+    "Q3": 323.15,
+    "IQR": 0.0
+  },
+  "T_TM_in": {
+    "total_points": 5000,
+    "outliers_removed": "1000",
+    "outlier_percentage": 20.0,
+    "lower_bound": 323.15,
+    "upper_bound": 323.15,
+    "Q1": 323.15,
+    "Q3": 323.15,
+    "IQR": 0.0
+  }
+}

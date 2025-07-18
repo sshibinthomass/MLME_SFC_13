@@ -1,0 +1,2 @@
+file_name,file_path,cluster_id,num_predictions,overall_r2,overall_rmse,overall_mae,overall_mse,timestamp
+file_12738.txt,Model_Train/Beat-the-Felix/file_12738.txt,0,979,0.7553942203521729,0.10791996009445584,0.04406212642788887,0.01164671778678894,20250718_112948

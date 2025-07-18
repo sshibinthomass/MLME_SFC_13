@@ -1,0 +1,1 @@
+{"state_cols": ["T_PM", "c", "d10", "d50", "d90", "T_TM"], "exog_cols": ["mf_PM", "mf_TM", "Q_g", "w_crystal", "c_in", "T_PM_in", "T_TM_in"], "lag": 20}
