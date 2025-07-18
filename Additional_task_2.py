@@ -29,7 +29,7 @@ from datetime import datetime
 from scipy import stats
 from tqdm import tqdm
 
-# Your imports
+# imports
 from preprocessing_final import (process_data, detect_cluster, load_cluster_models)
 
 # Configuration
@@ -367,8 +367,8 @@ def run_all_methods_comparison(test_file_path):
     df = process_data(test_file_path)
     cid = detect_cluster(df)
     scX, scY, narx = load_cluster_models(cid, MODEL_ROOT)
-    print(f"✓ Cluster {cid} detected")
-    print(f"✓ Data shape: {df.shape}")
+    print(f" Cluster {cid} detected")
+    print(f" Data shape: {df.shape}")
     
     # Get true values for comparison
     df_true = df.iloc[LAG+1:].reset_index(drop=True)
@@ -390,7 +390,7 @@ def run_all_methods_comparison(test_file_path):
         'upper': hi_g
     }
     
-    print(f"✓ Gaussian completed in {timings['gaussian']:.1f} seconds")
+    print(f" Gaussian completed in {timings['gaussian']:.1f} seconds")
     print(f"  Uncertainty growth: {unc_g[-1].mean()/unc_g[0].mean():.2f}x")
     
     # ---- MONTE CARLO METHOD ----
@@ -405,7 +405,7 @@ def run_all_methods_comparison(test_file_path):
         'upper': hi_mc
     }
     
-    print(f"✓ Monte Carlo completed in {timings['monte_carlo']:.1f} seconds")
+    print(f" Monte Carlo completed in {timings['monte_carlo']:.1f} seconds")
     print(f"  Uncertainty growth: {unc_mc[-1].mean()/unc_mc[0].mean():.2f}x")
     
     # ---- KALMAN FILTER METHOD ----
@@ -421,7 +421,7 @@ def run_all_methods_comparison(test_file_path):
         'upper': hi_k
     }
     
-    print(f"✓ Kalman completed in {timings['kalman']:.1f} seconds")
+    print(f" Kalman completed in {timings['kalman']:.1f} seconds")
     print(f"  Uncertainty growth: {unc_k[-1].mean()/unc_k[0].mean():.2f}x")
     
     # ---- CALCULATE METRICS ----
@@ -688,7 +688,7 @@ if __name__ == "__main__":
     test_files = sorted(TEST_DIR.glob("*.txt"))
     
     if not test_files:
-        print("No test files found!")
+        print("No test files found")
         exit(1)
     
     # Use first file or specify which one
@@ -702,7 +702,7 @@ if __name__ == "__main__":
     try:
         metrics, summary, results = run_all_methods_comparison(test_file)
         
-        print("\nSUCCESS! All methods completed.")
+        print("\nAll methods completed.")
         print(f"Check results in: {OUTPUT_DIR}")
         
     except KeyboardInterrupt:
