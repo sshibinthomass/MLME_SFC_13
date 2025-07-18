@@ -128,6 +128,27 @@ This repository contains all code, models, and data processing scripts for the M
 
 ---
 
+## Dependencies
+
+This project requires **Python 3.10**.
+
+> **Note:** The project was developed on **Linux** to support the latest version of TensorFlow GPU. However, the prediction part has also been tested on **Windows**.
+
+The following Python packages are required (see `requirements.txt`):
+
+```
+numpy==2.1.3
+pandas==2.3.1
+tensorflow==2.19.0
+matplotlib==3.10.3
+scikit-learn==1.7.0
+scipy==1.15.3
+tqdm==4.67.1
+seaborn==0.13.2
+```
+
+---
+
 ## Authors
 
 - Shibin Paul
