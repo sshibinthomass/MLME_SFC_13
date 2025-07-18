@@ -1,3 +1,14 @@
+<h1 style="animation: blink 1s step-start 0s infinite; color: #FF4081; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+ We've outperformed the Felix model!!!
+</h1>
+
+<style>
+@keyframes blink {
+  50% { opacity: 0; }
+}
+</style>
+
+
 ## Dependencies
 
 This project requires **Python 3.10**.
