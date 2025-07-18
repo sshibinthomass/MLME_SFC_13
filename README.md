@@ -1,10 +1,10 @@
-<span style="font-size: 2em; font-weight: bold; animation: blinker 1s linear infinite; color: #39FF14;">
-  We've outperformed the Felix model!!!
-</span>
+<div align="center">
 
-<style>
-@keyframes blinker { 50% { opacity: 0; } }
-</style>
+# **We've outperformed the Felix model!!!**
+
+![Success](https://img.shields.io/badge/Model_Benchmark-Beaten-00C853?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 
 ## Dependencies
