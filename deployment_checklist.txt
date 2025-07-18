@@ -1,4 +1,4 @@
---Deployment Checklist (Run these commands in PowerShell)--
+--Deployment Checklist (Run these commands in Cmd)--
 
 cd D:\Projects-->Folder you want to clone the repo 
 
@@ -12,10 +12,20 @@ cd MLME_SFC_13-->Go to project File
 
 pip install uv-->Install UV if not already done
 
-uv venv -p python3.10 venv-->Create Virtual Environment 
-.venv\Scripts\activate-->Activate VEnv
+uv venv -p python3.10 .venv-->Create Virtual Environment 
 
 uv init--> initialize the uv project
 
+.venv\Scripts\activate--> To activate the virtual environment
 
 uv add -r requirements.txt-->Install the requirements
+
+uv pip install tensorflow--> To install tensoeflow
+
+
+--To run the Prediction--
+
+Move the test file inside Model_Train/Beat-the-Felix and remove the existing Beat-the-Felix file
+
+python main.py --> To run the final prediction
+python Additional_task_2.py--> To run the additional task
