@@ -5,3 +5,4 @@ scikit-learn==1.7.0
 scipy==1.15.3
 tqdm==4.67.1
 seaborn==0.13.2 
+tensorflow==2.19.0
