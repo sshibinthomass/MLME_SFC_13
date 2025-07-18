@@ -1,8 +1,7 @@
-<h1 style="animation: blinker 1s linear infinite; color: #00E5FF;">
+<span style="font-size: 2em; font-weight: bold; animation: blinker 1s linear infinite; color: #39FF14;">
   We've outperformed the Felix model!!!
-</h1>
+</span>
 
-<!-- Add this in an HTML-compatible markdown viewer -->
 <style>
 @keyframes blinker { 50% { opacity: 0; } }
 </style>
