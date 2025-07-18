@@ -750,7 +750,7 @@ for i, idx in enumerate(top_indices):
     print(f"    {i+1}. {feature_names[idx]}: {feature_importance[idx]:.3f}")
 
 # Diagnostic: Why certain features might not appear
-print(f"\n🔍 Diagnostic: Feature Variance Analysis:")
+print(f"\n Diagnostic: Feature Variance Analysis:")
 for col in CLUST_COLS:
     col_idx = CLUST_COLS.index(col)
     mean_idx = col_idx * 4
@@ -773,7 +773,7 @@ for col in CLUST_COLS:
     print(f"    Actual std values - min: {np.min(feature_values):.2e}, max: {np.max(feature_values):.2e}")
 
 # 4. Cluster Separation Analysis
-print(f"\n📊 Cluster Separation Analysis:")
+print(f"\n Cluster Separation Analysis:")
 for cid in unique_clusters:
     cluster_mask = cluster_labels == cid
     cluster_data = feat_s[cluster_mask]
@@ -789,7 +789,7 @@ for cid in unique_clusters:
     print(f"    Avg distance to center: {avg_distance:.4f} ± {std_distance:.4f}")
 
 # 5. Inter-cluster Distance Analysis
-print(f"\n📏 Inter-cluster Distances:")
+print(f"\n Inter-cluster Distances:")
 for i in range(len(unique_clusters)):
     for j in range(i+1, len(unique_clusters)):
         cid1, cid2 = unique_clusters[i], unique_clusters[j]
@@ -895,7 +895,7 @@ print("\n" + "="*60)
 # ──────────────────────────────────────────────────────────────────────────
 #%% 3. Train a separate NARX per cluster (with scaler per cluster).
 # --------------------------------------------------------------------------
-print("\n🔧 Phase 1: NARX Data Preprocessing and Preparation …")
+print("\n Phase 1: NARX Data Preprocessing and Preparation …")
 # Store preprocessed data for each cluster
 cluster_data = {}
 
