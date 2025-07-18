@@ -1,11 +1,10 @@
-<h1 style="animation: blink 1s step-start 0s infinite; color: #FF4081; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
- We've outperformed the Felix model!!!
+<h1 style="animation: blinker 1s linear infinite; color: #00E5FF;">
+  We've outperformed the Felix model!!!
 </h1>
 
+<!-- Add this in an HTML-compatible markdown viewer -->
 <style>
-@keyframes blink {
-  50% { opacity: 0; }
-}
+@keyframes blinker { 50% { opacity: 0; } }
 </style>
 
 
