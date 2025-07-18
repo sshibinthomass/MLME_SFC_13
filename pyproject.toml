@@ -1,7 +1,7 @@
 [project]
 name = "mlme-sfc-13"
 version = "0.1.0"
-description = "Add your description here"
+description = "Machine Learning Methods for Engineers Project SS25"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
