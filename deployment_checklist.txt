@@ -20,7 +20,7 @@ uv init--> initialize the uv project
 
 uv add -r requirements.txt-->Install the requirements
 
-uv pip install tensorflow--> To install tensoeflow
+uv pip install tensorflow--> To install tensorflow
 
 
 --To run the Prediction--
